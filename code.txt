@@ -38,5 +38,6 @@ freqtrade trade-s Apollo11
 sudo apt install supervisor
 cd /etc/supervisor/conf.d
 nano bot1.conf
-
+stderr_logfile=/var/log/idle.err.log
+stdout_logfile=/var/log/idle.out.log
 
