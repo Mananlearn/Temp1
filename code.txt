@@ -1,0 +1,42 @@
+sudo apt update 
+sudo apt upgrade 
+sudo apt install git
+sudo apt install -y python3-pip python3-venv python-dev python3-pandas git curl
+
+cd freqtrade/
+chmod 777 setup.sh
+sudo apt install software-properties-common
+sudo add-apt-repository ppa:deadsnakes/ppa
+
+sudo apt install python3.8
+./setup.sh -i
+./setup.sh -c
+freqtrade new-config -c config.json
+yes
+usdt
+100
+50
+6
+15m
+usd
+binance no
+no
+y
+127.0.0.1
+freqtrader
+123456
+
+
+nano config.json
+nano user_data/stratergies/Apollo11.py
+https://raw.githubusercontent.com/shanejones/goddard/main/Apollo11.py
+freqtrade trade-s Apollo11
+
+
+
+
+sudo apt install supervisor
+cd /etc/supervisor/conf.d
+nano bot1.conf
+
+
