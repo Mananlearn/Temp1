@@ -18,30 +18,6 @@ cd ~/freqtrade/user_data/strategies/
 curl -o Apollo11.py https://raw.githubusercontent.com/shanejones/goddard/main/Apollo11.py
 cd ~/freqtrade/
 curl -o config.json https://raw.githubusercontent.com/Mananlearn/Temp1/master/config.json
-while true
-do
-      read -r -p "Enter your API key [Y/n] " input
- 
-      case $input in
-            [yY][eE][sS]|[yY])
-                  echo "Here you go"
-                  read -sp 'Key: ' uservar
-                  read -sp 'Secret ' passvar
-                  sed -i "s/hahaky/"$uservar"/g" config.json
-                  sed -i "s/hahasc/"$passvar"/g" config.json
-                  sed -i "s/hahadry/true/g" config.json
-                  nano config.json
-                  break
-                  ;;
-            [nN][oO]|[nN])
-                  echo "No"
-                  break
-                  ;;
-            *)
-                  echo "Invalid input..."
-                  ;;
-      esac      
-done
 cd /etc/supervisor/conf.d/
 curl -o bot1.conf https://raw.githubusercontent.com/Mananlearn/Temp1/master/bot1.conf
 nano bot1.conf
