@@ -29,7 +29,8 @@ do
                   read -sp 'Secret ' passvar
                   sed -i "s/hahaky/"$uservar"/g" config.json
                   sed -i "s/hahasc/"$passvar"/g" config.json
-                  sed -i "s/hahadry/true/g" config.json                  
+                  sed -i "s/hahadry/true/g" config.json
+                  nano config.json
                   break
                   ;;
             [nN][oO]|[nN])
