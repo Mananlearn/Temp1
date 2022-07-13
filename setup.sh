@@ -13,7 +13,6 @@ git clone https://github.com/freqtrade/freqtrade.git
 cd ~/freqtrade/
 chmod 777 setup.sh
 ./setup.sh -i
-source .env/bin/activate
 cd ~/freqtrade/user_data/strategies/
 curl -o Apollo11.py https://raw.githubusercontent.com/shanejones/goddard/main/Apollo11.py
 cd ~/freqtrade/
