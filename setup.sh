@@ -2,7 +2,7 @@
 apt update -y
 apt upgrade -y
 apt install git -y
-apt install -y python3-pip python3-venv python-dev python3-pandas git curl
+apt install -y python3-pip python3-venv python-dev python3-pandas python-wheel-common git curl
 apt install -y python3.8
 apt install -y software-properties-common
 apt install -y supervisor
