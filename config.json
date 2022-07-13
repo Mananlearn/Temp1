@@ -6,7 +6,7 @@
     "tradable_balance_ratio": 0.99,
     "fiat_display_currency": "USD",
     "timeframe": "15m",
-    "dry_run": true,
+    "dry_run": hahadry,
     "cancel_open_orders_on_exit": false,
     "trading_mode": "spot",
     "margin_mode": "",
@@ -33,8 +33,8 @@
     },
     "exchange": {
         "name": "binance",
-        "key": "",
-        "secret": "",
+        "key": "hahaky",
+        "secret": "hahasc",
         "ccxt_config": {},
         "ccxt_async_config": {},
         "pair_whitelist": [
