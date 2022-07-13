@@ -44,26 +44,7 @@ do
 done
 cd /etc/supervisor/conf.d/
 curl -o bot1.conf https://raw.githubusercontent.com/Mananlearn/Temp1/master/bot1.conf
-sed -i "s/foo/"$SUDO_USER"/g" bot1.conf
+nano bot1.conf
 supervisorctl reread
 supervisorctl update
 supervisorctl status
-while true
-do
-      read -r -p "Reboot? [Y/n]" input
- 
-      case $input in
-            [yY][eE][sS]|[yY])
-                  echo "Yes"
-                  reboot
-                  break
-                  ;;
-            [nN][oO]|[nN])
-                  echo "No"
-                  break
-                  ;;
-            *)
-                  echo "Invalid input..."
-                  ;;
-      esac      
-done
