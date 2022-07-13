@@ -13,5 +13,6 @@ First open Terminal
   chmod +x freqsetup.sh
   
   sudo ./freqsetup.sh
-  gooo
+ 
+ gooo
   
