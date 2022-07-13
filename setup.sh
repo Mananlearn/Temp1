@@ -45,6 +45,8 @@ done
 cd /etc/supervisor/conf.d/
 curl -o bot1.conf https://raw.githubusercontent.com/Mananlearn/Temp1/master/bot1.conf
 nano bot1.conf
+cd ~/freqtrade/
+source .env/bin/activate
 supervisorctl reread
 supervisorctl update
 supervisorctl status
