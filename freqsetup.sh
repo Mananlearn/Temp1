@@ -20,6 +20,24 @@ curl -o config.json https://raw.githubusercontent.com/Mananlearn/Temp1/master/co
 cd /etc/supervisor/conf.d/
 curl -o bot1.conf https://raw.githubusercontent.com/Mananlearn/Temp1/master/bot1.conf
 supervisorctl reread
+while true
+do
+      read -r -p "Are You Sure? [Y/n] " input
+ 
+      case $input in
+            [yY][eE][sS]|[yY])
+                  echo "Yes"
+                  break
+                  ;;
+            [nN][oO]|[nN])
+                  echo "No"
+                  continue
+                  ;;
+            *)
+                  echo "Invalid input..."
+                  ;;
+      esac      
+done
+nano config.json
 supervisorctl update
 supervisorctl status
-^C
