@@ -43,7 +43,7 @@ do
 done
 cd /etc/supervisor/conf.d/
 curl -o bot1.conf https://raw.githubusercontent.com/Mananlearn/Temp1/master/bot1.conf
-sed -i "s/foo/"$USER"/g" bot1.conf
+sed -i "s/foo/"$SUDO_USER"/g" bot1.conf
 supervisorctl reread
 supervisorctl update
 supervisorctl status
