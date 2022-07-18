@@ -12,5 +12,6 @@ cd ~/
 git clone https://github.com/freqtrade/freqtrade.git
 cd ~/freqtrade/
 git checkout stable
+sudo ./build_helpers/install_ta-lib.sh
 chmod 777 setup.sh
 ./setup.sh -i
