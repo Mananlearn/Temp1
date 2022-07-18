@@ -11,5 +11,6 @@ apt-get -f install -y
 cd ~/
 git clone https://github.com/freqtrade/freqtrade.git
 cd ~/freqtrade/
+git checkout stable
 chmod 777 setup.sh
 ./setup.sh -i
