@@ -15,3 +15,8 @@ git checkout stable
 sudo ./build_helpers/install_ta-lib.sh
 chmod 777 setup.sh
 ./setup.sh -i
+
+cd ~/freqtrade/user_data/strategies/
+curl -o NostalgiaForInfinityX.py https://raw.githubusercontent.com/iterativv/NostalgiaForInfinity/main/NostalgiaForInfinityX.py
+
+nano /etc/supervisorctl/conf.d/bot1.conf
